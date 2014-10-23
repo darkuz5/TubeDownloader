@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape>
+            <solid
+                android:color="@android:color/white" />
+            
+            <stroke
+                android:width="1dp"
+                android:shadowColor="#dddddd"
+                android:shadowDx="3" 
+                android:shadowDy="2" 
+                android:shadowRadius="1.8"
+                android:color="#d2d2d2" />
+            <corners
+                android:radius="0dp" />
+            <padding
+                android:left="0dp"
+                android:top="0dp"
+                android:right="0dp"
+                android:bottom="0dp" />
+        </shape>
+    </item>
+
+ 
+</selector>

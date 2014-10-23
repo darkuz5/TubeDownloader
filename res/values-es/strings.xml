@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TubeDownloader</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Configuración</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_info">Acerda de</string>
+    <string name="title_activity_search">Buscar Videos</string>
+    <string name="title_activity_info">Tube Downloader</string>
+    <string name="search_hint">Buscar Videos</string>
+    <string name="search_settings">Buscar Videos</string>
+    <string name="donwloadText">Buscando...</string>
+    <string name="forTextD">Descargar</string>
+    <string name="forTextP">Reproducir</string>
+
+    <string name="error">Sin resultados que mostrar</string>
+    
+</resources>
