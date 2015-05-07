@@ -15,7 +15,7 @@ import org.apache.http.params.CoreProtocolPNames;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
+import org.json.JSONObject; 
 
 import com.darkuz5.tubedonwloader.R;   
 
@@ -57,7 +57,7 @@ public class SearchActivity extends ActionBarActivity {
 	 String urlx="";
 	 SearchView searchView;
 	 ProgressDialog dialog;
-	 private YTSDK ytsdk;
+	 private YTSDK ytsdk; 
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -110,7 +110,8 @@ public class SearchActivity extends ActionBarActivity {
 		        	//Toast.makeText(getApplicationContext(), "Buscar "+query, Toast.LENGTH_LONG).show();
 		        	if (query.length()>0){
 		        	//urlx = "http://gdata.youtube.com/feeds/api/videos?q="+Uri.encode(query)+"&alt=json";
-		        	urlx = "https://gdata.youtube.com/feeds/api/videos?v=2&q="+Uri.encode(query)+"&alt=jsonc&max-results=50&orderby=viewCount&safeSearch=none";
+		        	urlx = "https://www.googleapis.com/youtube/v3/search?part=snippet&q="+Uri.encode(query)+"&key=AIzaSyBaMPl9JhX7innu7f2tvmMnfq0AiqJGzi4";
+		        	//urlx = "https://gdata.youtube.com/feeds/api/videos?v=2&q="+Uri.encode(query)+"&alt=jsonc&max-results=50&orderby=viewCount&safeSearch=none";
 		        	getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 			        descarga(urlx);
 			        searchView.clearFocus();
@@ -238,7 +239,7 @@ public class SearchActivity extends ActionBarActivity {
 		try { 
 		SQLiteHelper gbd = new SQLiteHelper(getApplicationContext(), "YouTubeDwn.db", null, 1); 		
 		SQLiteDatabase db = gbd.getWritableDatabase();	
-		//Log.i("texto",contenido);
+		Log.i("texto",contenido);
 		db.execSQL("delete from video");	
 		JSONObject json = new JSONObject(contenido);
         JSONArray jsonArray = json.getJSONObject("data").getJSONArray("items");

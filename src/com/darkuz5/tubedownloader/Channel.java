@@ -11,7 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class Channel extends Activity {
-
+ 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

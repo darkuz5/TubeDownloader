@@ -60,6 +60,9 @@
             android:name="com.darkuz5.tubedownloader.Channel"
             android:label="@string/title_activity_channel" >
         </activity>
+        
+        <meta-data android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>
